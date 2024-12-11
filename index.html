@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="video-container">
+        <!-- Video with Dropbox source -->
+        <video id="video" width="100%" height="auto" controls>
+            <source src="https://www.dropbox.com/scl/fi/4mocentm6lmkr14xqaq6f/video.mp4?rlkey=6hu4zsho4czhdhv85l9siwu76&st=5k7bfk9k&raw=1" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button class="play-button" onclick="playVideo()">Play</button>
+    </div>
+    <script>
+        function playVideo() {
+            const video = document.getElementById('video');
+            video.play();
+        }
+    </script>
+</body>
+</html>
